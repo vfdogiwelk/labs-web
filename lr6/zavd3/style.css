@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 50px;
+    background-color: #f0f0f0;
+    font-family: Arial;
+}
+
+.plans {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan {
+    width: 200px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.plan-header {
+    font-weight: bold;
+    padding: 10px;
+    margin: -20px -20px 20px;
+    border-radius: 8px 8px 0 0;
+    border-top: 3px solid #c53a3a;
+}
+
+.orange-h {
+    border-top-color: #ff9800;
+}
+
+.blue-h {
+    border-top-color: #2196F3;
+}
+
+.green-h {
+    border-top-color: #4CAF50;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.features {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.features p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.red {
+    background-color: #c53a3a;
+}
+
+.btn.orange {
+    background-color: #ff9800;
+}
+
+.btn.blue {
+    background-color: #2196F3;
+}
+
+.btn.green {
+    background-color: #4CAF50;
+}

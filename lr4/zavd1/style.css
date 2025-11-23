@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 240px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.product-info {
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.property {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.btn-edit {
+    flex: 1;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-delete {
+    flex: 1;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.content {
+   max-width: 700px;
+   margin: 0 auto;
+}
+.player {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.cards {
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+}
+.card {
+    font-size: 18px;
+    padding: 4px 8px;
+    background-color: #dddcdf;
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+}

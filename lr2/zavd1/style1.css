@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+.fruit-list {
+    background-color: #f8d7da;
+    padding: 20px;
+    border-radius: 8px;
+    list-style: decimal;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.fruit-list li{
+    background-color: #dc6c85;
+    padding: 8px 15px;
+    border-radius: 4px;    
+    color: white;
+    margin: 5px 0;
+    font-weight: bold;
+}

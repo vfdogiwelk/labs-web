@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 450px;
+    height: 450px;
+    border: 25px solid rgb(255, 153, 170);
+    z-index: -1;
+}
+
+img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 450px;
+    height: 450px;
+    border: 25px solid rgb(255, 153, 170);
+    border-top: 0;
+    border-bottom: 0;
+    z-index: 1;
+}

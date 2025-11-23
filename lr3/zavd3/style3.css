@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    }
+     
+    h1 {
+    color: #d4722b;
+    text-align: center;
+    }
+     
+    p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    }
+     
+    .schedule {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #27ADF5;
+    }
