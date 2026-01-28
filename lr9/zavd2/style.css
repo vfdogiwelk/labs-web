@@ -1,0 +1,160 @@
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.chat {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.message {
+    display: grid;
+    gap: 10px;
+    align-items: end;
+}
+
+.message.left {
+    grid-template-columns: 45px 1fr;
+}
+
+.message.right {
+    grid-template-columns: 1fr 45px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content {
+    display: grid;
+    gap: 4px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.message.right .info {
+    justify-content: end;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 13px;
+    color: #555;
+}
+
+.time {
+    font-size: 12px;
+    color: #999;
+}
+
+.bubble {
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message.left .bubble{
+    background-color: #e8e8e8;
+    border-radius: 12px 12px 12px 0;
+    color: #222;
+}
+
+.message.right .bubble {
+    background-color: #4a90d9;
+    border-radius: 12px 12px 0 12px;
+    color: #fff;
+}
+
+.message.right .content {
+    justify-items: end;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 15px;
+    }
+
+    .chat {
+        gap: 12px;
+    }
+
+    .avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .message.left {
+        grid-template-columns: 38px 1fr;
+    }
+
+    .message.right {
+        grid-template-columns: 1fr 38px;
+    }
+
+    .bubble {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .chat {
+        gap: 10px;
+    }
+
+    .message.left,
+    .message.right {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .bubble {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .message.left .bubble {
+        border-radius: 0 12px 12px 12px;
+    }
+
+    .message.right .bubble {
+        border-radius: 12px 0 12px 12px;
+    }
+
+    .name {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
