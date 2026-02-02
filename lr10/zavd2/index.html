@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2 - Модальне вікно</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Картка товару - Планшет</h1>
+
+    <button class="btn-open" onclick="document.getElementById('modal-overlay').style.display='flex'">
+        Створити картку товару
+    </button>
+
+    <div class="overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">Створення картки: Планшет</h2>
+                <span class="modal-close" onclick="document.getElementById('modal-overlay').style.display='none'">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <form id="tablet-form" action="#" method="post">
+                    <div class="image-preview">
+                        <img id="preview-img" src="../img/01.jpg" alt="Попередній перегляд">
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="image-upload">Зображення товару</label>
+                        <input class="field-file" type="file" id="image-upload" name="image" accept="image/*">
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="manufacturer">Виробник / Модель</label>
+                        <input class="field-input" type="text" id="manufacturer" name="manufacturer" placeholder="Наприклад: Samsung Galaxy Tab S9">
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="diagonal">Діагональ, дюймів</label>
+                        <input class="field-number" type="number" id="diagonal" name="diagonal" placeholder="11.0" step="0.1" min="5" max="15">
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="resolution">Роздільна здатність</label>
+                        <select class="field-select" id="resolution" name="resolution">
+                            <option value="" disabled selected>Оберіть роздільну здатність</option>
+                            <option value="1280x800">1280x800</option>
+                            <option value="2560x1600">2560x1600</option>
+                            <option value="2048x1536">2048x1536</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="storage">Вбудована пам'ять, ГБ</label>
+                        <input class="field-number" type="number" id="storage" name="storage" placeholder="128" min="16" max="2048">
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="battery">Ємність батареї, мАг</label>
+                        <input class="field-number" type="number" id="battery" name="battery" placeholder="8000" min="1000" max="20000">
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-save" onclick="document.getElementById('modal-overlay').style.display='none'">Зберегти</button>
+                <button class="btn-cancel" onclick="document.getElementById('modal-overlay').style.display='none'">Скасувати</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
