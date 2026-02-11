@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12</title>
+</head>
+<body>
+
+    <script>
+        alert("Ілля");
+    </script>
+
+    <script>
+        let a;
+        let b;
+
+        a = 15;
+        b = 42;
+
+        console.log("a = " + a);
+        console.log("b = " + b);
+
+        a = b;
+
+        console.log("Після копіювання:");
+        console.log("a = " + a);
+        console.log("b = " + b);
+    </script>
+
+    <script>
+        let obj = {
+            "String": "hello",
+            "Number": 9,
+            "Boolean": true,
+            "Undefined": undefined,
+            "Null": null
+        };
+        console.log(obj);
+    </script>
+
+    <script>
+        let isAdult = confirm("Вам є 18 років?");
+        console.log("isAdult = " + isAdult);
+    </script>
+
+    <script>
+        let login = prompt("Введіть логін:");
+        let email = prompt("Введіть email:");
+        let password = prompt("Введіть пароль:");
+        alert("Dear User, your email is " + email + ", your password is " + password);
+    </script>
+
+    <script>
+        let secInHour = 60 * 60;
+        let secInDay = secInHour * 24;
+        let secInMonth = secInDay * 30;
+
+        console.log("Секунд в годині: " + secInHour);
+        console.log("Секунд в дні: " + secInDay);
+        console.log("Секунд в місяці: " + secInMonth);
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
