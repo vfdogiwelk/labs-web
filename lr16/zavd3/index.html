@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3 - Показ/приховання</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .toggle-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 30px;
+            font-size: 16px;
+            background-color: #4a90d9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .toggle-btn:hover {
+            background-color: #3a7bc8;
+        }
+        .items {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .item {
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Показ та приховання елементів</h1>
+
+    <button class="toggle-btn" id="toggleBtn">Приховати елементи</button>
+
+    <div class="items" id="itemsList">
+        <div class="item">Елемент 1 - JavaScript</div>
+        <div class="item">Елемент 2 - HTML</div>
+        <div class="item">Елемент 3 - CSS</div>
+        <div class="item">Елемент 4 - DOM</div>
+        <div class="item">Елемент 5 - Web API</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
