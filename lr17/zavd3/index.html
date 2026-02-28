@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3 - Країна та місто</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Вибір країни та міста</h1>
+
+    <div class="form-wrapper">
+        <div class="select-group">
+            <label for="country">Країна:</label>
+            <select id="country">
+                <option value="">-- Оберіть країну --</option>
+                <option value="ger">Німеччина</option>
+                <option value="usa">США</option>
+                <option value="ukr">Україна</option>
+            </select>
+        </div>
+
+        <div class="select-group">
+            <label for="city">Місто:</label>
+            <select id="city" disabled>
+                <option value="">-- Спочатку оберіть країну --</option>
+            </select>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
