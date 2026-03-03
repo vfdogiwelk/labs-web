@@ -1,0 +1,18 @@
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#buttons-container,
+#rounded-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
