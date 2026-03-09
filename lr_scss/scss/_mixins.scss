@@ -1,0 +1,71 @@
+// Міксин для адаптивності
+@mixin responsive($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: $breakpoint-mobile) {
+            @content;
+        }
+    } @else if $breakpoint == tablet {
+        @media (max-width: $breakpoint-tablet) {
+            @content;
+        }
+    } @else if $breakpoint == desktop {
+        @media (max-width: $breakpoint-desktop) {
+            @content;
+        }
+    }
+}
+
+// Міксин для flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Міксин для кнопок
+@mixin button-style($bg-color, $text-color: $color-white) {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: $radius-small;
+    font-size: $font-size-base;
+    cursor: pointer;
+    text-decoration: none;
+    transition: $transition-base;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+// Міксин для заголовків секцій
+@mixin section-heading {
+    font-size: $font-size-h2;
+    text-align: center;
+    margin-bottom: 45px;
+    color: $color-text;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: $color-primary;
+        margin: 12px auto 0;
+    }
+}
+
+// Функція для прозорості кольору
+@function color-alpha($color, $alpha) {
+    @return rgba($color, $alpha);
+}

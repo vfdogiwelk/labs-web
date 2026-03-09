@@ -1,0 +1,39 @@
+$color-primary: #2196F3;
+$color-primary-dark: darken($color-primary, 12%);
+$color-dark: #1a1a2e;
+$color-dark-light: #16213e;
+$color-white: #ffffff;
+$color-light: #f5f7fa;
+$color-text: #333333;
+$color-text-light: #666666;
+$color-border: #e0e0e0;
+
+// Шрифти
+$font-main: 'Segoe UI', Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-h1: 42px;
+$font-size-h2: 32px;
+$font-size-h3: 20px;
+
+// Відступи
+$padding-section: 70px 0;
+$container-width: 1100px;
+$container-padding: 0 20px;
+
+// Брейкпоінти
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Тіні
+$shadow-card: 0 3px 15px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 6px 25px rgba(0, 0, 0, 0.15);
+
+// Радіуси
+$radius-small: 4px;
+$radius-medium: 8px;
+$radius-circle: 50%;
+
+// Транзишн
+$transition-base: all 0.3s ease;

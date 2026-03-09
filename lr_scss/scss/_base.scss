@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    font-size: $font-size-base;
+    color: $color-text;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $container-padding;
+}
+
+// Плейсхолдер для секцій (використовуємо @extend)
+%section-padding {
+    padding: $padding-section;
+}
+
+// Заголовок секції (клас + extend)
+.section-title {
+    @include section-heading;
+}
+
+// Стилі кнопок
+.btn {
+    @include button-style($color-primary);
+
+    &--primary {
+        @include button-style($color-primary);
+        font-size: 18px;
+        padding: 14px 40px;
+    }
+}

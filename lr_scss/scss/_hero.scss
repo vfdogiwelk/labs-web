@@ -1,0 +1,36 @@
+.hero {
+    @extend %section-padding;
+    background: linear-gradient(135deg, $color-dark 0%, $color-dark-light 100%);
+    color: $color-white;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+    @include flex-center;
+}
+
+.hero-title {
+    font-size: $font-size-h1;
+    margin-bottom: 20px;
+    line-height: 1.3;
+
+    @include responsive(tablet) {
+        font-size: 32px;
+    }
+
+    @include responsive(mobile) {
+        font-size: 26px;
+    }
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+
+    @include responsive(mobile) {
+        font-size: 15px;
+    }
+}

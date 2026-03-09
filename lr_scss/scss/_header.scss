@@ -1,0 +1,73 @@
+.header {
+    background-color: $color-dark;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    .container {
+        @include flex-between;
+    }
+
+    @include responsive(tablet) {
+        .container {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: 1px;
+
+    span {
+        color: $color-primary;
+    }
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+
+    a {
+        color: #ccc;
+        font-size: $font-size-small;
+        transition: $transition-base;
+        padding: 5px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $color-primary;
+            transition: $transition-base;
+        }
+
+        &:hover {
+            color: $color-white;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    @include responsive(tablet) {
+        gap: 15px;
+    }
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
