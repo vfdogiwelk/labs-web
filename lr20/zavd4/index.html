@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4 - Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Реєстрація</h1>
+
+    <div class="center">
+        <button id="openBtn" class="btn">Реєстрація</button>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="modal">
+            <button id="closeBtn" class="close-btn">&times;</button>
+            <h2>Реєстрація</h2>
+            <form id="regForm">
+                <div class="field">
+                    <label for="nickname">Нікнейм</label>
+                    <input type="text" id="nickname" placeholder="Введіть нікнейм" required>
+                    <span class="error" id="nicknameError"></span>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@domain.com" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="field">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введіть пароль" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="field">
+                    <label for="confirmPassword">Підтвердження паролю</label>
+                    <input type="password" id="confirmPassword" placeholder="Повторіть пароль" required>
+                    <span class="error" id="confirmError"></span>
+                </div>
+                <button type="submit" class="btn submit-btn">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
